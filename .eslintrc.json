@@ -1,0 +1,65 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": [
+        "airbnb"
+    ],
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "paths": [
+                    "."
+                ],
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        }
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "parser": "babel-eslint",
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        "quotes": ["warn", "double"],
+        "semi": "warn",
+        "indent": "warn",
+        "comma-dangle": "off",
+        "jsx-a11y/anchor-is-valid": "off",
+        "max-len": "off",
+        "no-console": "off",
+        "no-plusplus": "off",
+        "react/forbid-prop-types": "off",
+        "react/jsx-filename-extension": "off",
+        "react/jsx-props-no-spreading": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/require-default-props": "off",
+        "linebreak-style": "off",
+        "import/no-extraneous-dependencies": "off",
+        "react/prefer-stateless-function": "off",
+        "no-useless-constructor": "off",
+        "react/self-closing-comp": "off",
+        "react/jsx-wrap-multilines": "off",
+        "no-trailing-spaces": "warn",
+        "react/no-unused-state": "off",
+        "no-unused-vars": "warn",
+        "arrow-body-style": "off",
+        "no-undef": "warn",
+        "no-underscore-dangle": "warn",
+        "no-unused-expressions": "warn",
+        "prefer-const": "warn",
+        "object-curly-newline": "off",
+        "react/prop-types": "off"
+    }
+}

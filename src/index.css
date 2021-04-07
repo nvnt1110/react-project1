@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app-btn {
+  border-radius: 2px;
+  background-color: #098809;
+  border: none;
+  box-shadow: 0px 1px 4px 1px #b2bec3;
+  padding: 8px 20px;
+  color: #ffffff;
+  outline: none;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.app-btn:active {
+  transition: 0s;
+  background-color: #015201;
+  opacity: 1;
+}
+
+.app-input {
+  padding: 5px 10px;
+  outline: none;
+  border-radius: 3px;
+  border: solid 2px #9ebda8;
+  box-shadow: 0px 0px 3px 0px #9ebda8;
+}

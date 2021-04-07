@@ -1,0 +1,11 @@
+.container-product {
+  margin: 0 auto;
+  width: 20%;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}

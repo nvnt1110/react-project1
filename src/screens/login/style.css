@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 20vh;
+    align-items: center;
+}
+
+form input {
+    width: 20%;
+}
+
+.container-message-error {
+    margin: 10px 0;
+    width: 21%;
+}

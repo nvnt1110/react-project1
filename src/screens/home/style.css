@@ -1,0 +1,17 @@
+button {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.container-home {
+  margin: 0 auto;
+  width: 20%;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-align: center;
+  margin-right: 15px;
+}
