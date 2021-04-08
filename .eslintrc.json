@@ -60,6 +60,9 @@
         "no-unused-expressions": "warn",
         "prefer-const": "warn",
         "object-curly-newline": "off",
-        "react/prop-types": "off"
+        "react/prop-types": "off",
+        "react/no-children-prop": "off",
+        "react/jsx-max-props-per-line": "off",
+        "react/jsx-first-prop-new-line": "off"
     }
 }

@@ -5,8 +5,10 @@ import { BrowserRouter } from "react-router-dom";
 import { createStore } from "redux";
 import "./App.css";
 import authReducers from "./redux/reducers";
+import DetailProduct from "./screens/detail-product/DetailProduct";
 import Home from "./screens/home/Home";
 import Login from "./screens/login";
+import PageEmpty from "./screens/page-not-found/PageEmpty";
 import Product from "./screens/product/Product";
 
 // const _products = ["Widget", "Gadget", "Doohickey"];
@@ -110,8 +112,13 @@ const App = () => {
       <BrowserRouter>
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route exact path="/home" component={Home} />
+          <Route path="/home" component={Home} />
           <Route exact path="/product" component={Product} />
+          <Route path="/product/:id" children={(props) => {
+            console.log("App ~ props", props)
+            return props.match.isExact ? <DetailProduct {...props} /> : <PageEmpty />;
+          }}
+          />
         </Switch>
       </BrowserRouter>
     </Provider>

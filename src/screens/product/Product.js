@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { withRouter } from "react-router";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import { TEST_SUM } from "../../redux/actions/types";
 import "./style.css";
 
@@ -23,6 +24,8 @@ class Product extends React.Component {
         <div className="container-product">
           <h1>{testRedux.sum}</h1>
           <button type="button" className="app-btn" onClick={this.onBack}>Back</button>
+          <Link className="app-btn" to="/product/1">Detail1</Link>
+          <Link className="app-btn" to="/product/2">Detail2</Link>
         </div>
       </div>
     );
